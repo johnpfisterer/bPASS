@@ -1,0 +1,187 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+    android:id="@+id/id"
+    android:focusableInTouchMode="true">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/linearLayout3">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@+id/string.name_ID"
+            android:id="@+id/textView_name"
+            android:layout_gravity="center"
+            android:paddingBottom="16dp"
+            android:textSize="25sp"
+            android:layout_weight="1" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="3dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="false"
+                android:layout_alignParentEnd="false"
+                android:id="@+id/linearLayout4"
+                android:layout_weight="1"
+                android:layout_alignParentTop="false"
+                android:layout_alignParentLeft="false"
+                android:layout_alignWithParentIfMissing="false"
+                android:layout_alignParentRight="false" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Alarms"
+                    android:id="@+id/textView7"
+                    android:textSize="30dp"
+                    android:layout_weight="1"
+                    android:gravity="top|center_horizontal"
+                    android:padding="3dp"
+                    android:layout_alignParentTop="false"
+                    android:layout_alignParentEnd="false"
+                    android:layout_alignParentBottom="false"
+                    android:layout_alignParentRight="false"
+                    android:layout_alignWithParentIfMissing="false" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.33"
+                    android:id="@+id/imageView6"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentStart="true"
+                    android:src="@drawable/ekg"
+                    android:layout_alignEnd="@+id/textView"
+                    android:padding="3dp"
+                    android:text="OH NO something Is bad"
+                    android:layout_gravity="center" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="555"
+            android:background="#beffdd"
+            android:rowOrderPreserved="false"
+            android:useDefaultMargins="true"
+            android:visibility="visible"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            >
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="98 BPM"
+                    android:id="@+id/textView_heart"
+                    android:layout_alignTop="@+id/linearLayout3"
+                    android:layout_alignParentStart="true"
+                    android:layout_column="0"
+                    android:layout_columnWeight="1"
+                    android:textSize="45sp"
+                    android:textStyle="bold"
+                    android:textAlignment="gravity"
+                    android:padding="3dp"
+                    android:layout_rowWeight="1"
+                    android:autoText="false"
+                    android:background="#ff0005"
+                    android:clickable="true"
+                    android:onClick="click_heart"
+                    android:visibility="visible"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|center_horizontal" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="30 RPM"
+                    android:id="@+id/textView_breath"
+                    android:layout_column="1"
+                    android:layout_columnWeight="1"
+                    android:textSize="45sp"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:padding="3dp"
+                    android:layout_rowWeight="1"
+                    android:background="#0006ff"
+                    android:clickable="true"
+                    android:onClick="click_breath"
+                    android:visibility="visible"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|center_horizontal" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="99.8%"
+                    android:id="@+id/textView_O2"
+                    android:layout_column="0"
+                    android:layout_columnWeight="1"
+                    android:textSize="50sp"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:padding="3dp"
+                    android:layout_rowWeight="1"
+                    android:background="#e1e7ff"
+                    android:clickable="true"
+                    android:onClick="click_O2"
+                    android:visibility="visible"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|center_horizontal" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="80 F"
+                    android:id="@+id/textView_temp"
+                    android:layout_column="1"
+                    android:layout_columnWeight="1"
+                    android:textSize="50sp"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:padding="3dp"
+                    android:layout_rowWeight="1"
+                    android:background="#00ff10"
+                    android:autoText="false"
+                    android:clickable="true"
+                    android:onClick="click_temp"
+                    android:visibility="visible"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|center_horizontal" />
+            </TableRow>
+
+        </TableLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

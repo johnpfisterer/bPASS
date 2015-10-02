@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">WiFire</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="title_activity_bpm_graph">bpm_graph</string>
+    <string name="title_activity_o2_graph">O2_graph</string>
+    <string name="title_activity_rpm_graph">rpm_graph</string>
+    <string name="title_activity_temp_graph">temp_graph</string>
+    <string name="name_ID">Enter Name or ID</string>
+</resources>
+
+
+
+
+
+
+
+
+
+
+

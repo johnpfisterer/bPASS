@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="bme464.wifire" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SettingsActivity"
+            android:label="@string/title_activity_settings" >
+            android:parentActivityName="bme464.wifire.MainActivity >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="bme464.wifire.MainActivity" />
+        </activity>
+        <activity
+            android:name=".bpm_graph_activity"
+            android:label="@string/title_activity_bpm_graph"
+            android:parentActivityName=".MainActivity" >
+            android:screenOrientation="landscape"
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="bme464.wifire.MainActivity" />
+        </activity>
+        <activity
+            android:name=".O2_graph_activity"
+            android:label="@string/title_activity_o2_graph"
+            android:parentActivityName=".MainActivity" >
+            android:screenOrientation="landscape"
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="bme464.wifire.MainActivity" />
+        </activity>
+        <activity
+            android:name=".rpm_graph_activity"
+            android:label="@string/title_activity_rpm_graph"
+            android:parentActivityName=".MainActivity" >
+            android:screenOrientation="landscape"
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="bme464.wifire.MainActivity" />
+        </activity>
+        <activity
+            android:name=".temp_graph_activity"
+            android:label="@string/title_activity_temp_graph"
+            android:parentActivityName=".MainActivity" >
+            android:screenOrientation="landscape"
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="bme464.wifire.MainActivity" />
+        </activity>
+    </application>
+
+</manifest>
