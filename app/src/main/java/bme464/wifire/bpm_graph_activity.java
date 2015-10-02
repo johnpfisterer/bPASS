@@ -1,5 +1,5 @@
 package bme464.wifire;
-
+// I like to comment a lot
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
