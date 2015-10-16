@@ -2,39 +2,39 @@
 <items version="2" >
 
     <item
-        jar="C:\Users\John Pfisterer\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.0.1\support-annotations-23.0.1.jar"
+        jar="D:\AndroidSDK\extras\android\m2repository\com\android\support\support-annotations\23.0.1\support-annotations-23.0.1.jar"
         jumboMode="false"
         revision="23.0.1"
         sha1="1fce89a6428c51467090d7f424e4c9c3dbd55f7e">
-        <dex dex="C:\Users\John Pfisterer\AndroidStudioProjects\WiFire\app\build\intermediates\pre-dexed\debug\support-annotations-23.0.1-fb11f5794173157a711c2ced2c6e544ecd48a1a2.jar" />
+        <dex dex="D:\Android Projects\bPASS\app\build\intermediates\pre-dexed\debug\support-annotations-23.0.1-db7a563ea8e91f1377f0716f23cd327059dd69c4.jar" />
     </item>
     <item
-        jar="C:\Users\John Pfisterer\AndroidStudioProjects\WiFire\app\build\intermediates\exploded-aar\com.jjoe64\graphview\4.0.1\jars\classes.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="37bf8de5b4f9e7e93006db783b9b3168e32e38e9">
-        <dex dex="C:\Users\John Pfisterer\AndroidStudioProjects\WiFire\app\build\intermediates\pre-dexed\debug\classes-2be1f7f291ffeaa84bf98ad37fc50cc161d16c61.jar" />
-    </item>
-    <item
-        jar="C:\Users\John Pfisterer\AndroidStudioProjects\WiFire\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.0.1\jars\classes.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="d86429b0f0b3f3cafbeb78dda1b9d89119ccb05d">
-        <dex dex="C:\Users\John Pfisterer\AndroidStudioProjects\WiFire\app\build\intermediates\pre-dexed\debug\classes-ba6f4e8eb1995807a24f22ddbcfc73d1c6f08309.jar" />
-    </item>
-    <item
-        jar="C:\Users\John Pfisterer\AndroidStudioProjects\WiFire\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\jars\classes.jar"
+        jar="D:\Android Projects\bPASS\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\jars\classes.jar"
         jumboMode="false"
         revision="23.0.1"
         sha1="c31e21b53ff2f74664e498248d01453a32e32d48">
-        <dex dex="C:\Users\John Pfisterer\AndroidStudioProjects\WiFire\app\build\intermediates\pre-dexed\debug\classes-5fe87eebf83adb8737efdc4ba658f8d54942d4f0.jar" />
+        <dex dex="D:\Android Projects\bPASS\app\build\intermediates\pre-dexed\debug\classes-0de97b1e3434a0d72acd2fda6af0ed4beac40e3c.jar" />
     </item>
     <item
-        jar="C:\Users\John Pfisterer\AndroidStudioProjects\WiFire\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\jars\libs\internal_impl-23.0.1.jar"
+        jar="D:\Android Projects\bPASS\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\jars\libs\internal_impl-23.0.1.jar"
         jumboMode="false"
         revision="23.0.1"
         sha1="aa92916125166649d8ad4ba3940c3dd7515596d3">
-        <dex dex="C:\Users\John Pfisterer\AndroidStudioProjects\WiFire\app\build\intermediates\pre-dexed\debug\internal_impl-23.0.1-cffb1772f5764ea3b2fa8f4d0132fcd7455a3161.jar" />
+        <dex dex="D:\Android Projects\bPASS\app\build\intermediates\pre-dexed\debug\internal_impl-23.0.1-fdfc794e8434711f6310167b0f3dc12a0b53c5b3.jar" />
+    </item>
+    <item
+        jar="D:\Android Projects\bPASS\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.0.1\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="d86429b0f0b3f3cafbeb78dda1b9d89119ccb05d">
+        <dex dex="D:\Android Projects\bPASS\app\build\intermediates\pre-dexed\debug\classes-6775a5a3bcca17513fe05f797cd600e2ca850f8c.jar" />
+    </item>
+    <item
+        jar="D:\Android Projects\bPASS\app\build\intermediates\exploded-aar\com.jjoe64\graphview\4.0.1\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="37bf8de5b4f9e7e93006db783b9b3168e32e38e9">
+        <dex dex="D:\Android Projects\bPASS\app\build\intermediates\pre-dexed\debug\classes-c8b68f82420ad93b5480b705685b4619b295cb04.jar" />
     </item>
 
 </items>
