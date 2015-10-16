@@ -2,6 +2,13 @@
 <items version="2" >
 
     <item
+        jar="C:\Users\John Pfisterer\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.0.1\support-annotations-23.0.1.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="1fce89a6428c51467090d7f424e4c9c3dbd55f7e">
+        <dex dex="C:\Users\John Pfisterer\AndroidStudioProjects\WiFire\app\build\intermediates\pre-dexed\debug\support-annotations-23.0.1-fb11f5794173157a711c2ced2c6e544ecd48a1a2.jar" />
+    </item>
+    <item
         jar="C:\Users\John Pfisterer\AndroidStudioProjects\WiFire\app\build\intermediates\exploded-aar\com.jjoe64\graphview\4.0.1\jars\classes.jar"
         jumboMode="false"
         revision="23.0.1"
@@ -21,13 +28,6 @@
         revision="23.0.1"
         sha1="c31e21b53ff2f74664e498248d01453a32e32d48">
         <dex dex="C:\Users\John Pfisterer\AndroidStudioProjects\WiFire\app\build\intermediates\pre-dexed\debug\classes-5fe87eebf83adb8737efdc4ba658f8d54942d4f0.jar" />
-    </item>
-    <item
-        jar="C:\Users\John Pfisterer\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.0.1\support-annotations-23.0.1.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="1fce89a6428c51467090d7f424e4c9c3dbd55f7e">
-        <dex dex="C:\Users\John Pfisterer\AndroidStudioProjects\WiFire\app\build\intermediates\pre-dexed\debug\support-annotations-23.0.1-fb11f5794173157a711c2ced2c6e544ecd48a1a2.jar" />
     </item>
     <item
         jar="C:\Users\John Pfisterer\AndroidStudioProjects\WiFire\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\jars\libs\internal_impl-23.0.1.jar"

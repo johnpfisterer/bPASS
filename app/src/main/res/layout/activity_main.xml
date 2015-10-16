@@ -16,7 +16,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@+id/string.name_ID"
+            android:text="&apos;Enter Name or ID"
             android:id="@+id/textView_name"
             android:layout_gravity="center"
             android:paddingBottom="16dp"
