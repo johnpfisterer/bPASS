@@ -6,6 +6,7 @@
         jumboMode="false"
         revision="23.0.1"
         sha1="1fce89a6428c51467090d7f424e4c9c3dbd55f7e">
+<<<<<<< HEAD
         <dex dex="D:\Android Projects\bPASS\app\build\intermediates\pre-dexed\debug\support-annotations-23.0.1-db7a563ea8e91f1377f0716f23cd327059dd69c4.jar" />
     </item>
     <item
@@ -35,6 +36,37 @@
         revision="23.0.1"
         sha1="37bf8de5b4f9e7e93006db783b9b3168e32e38e9">
         <dex dex="D:\Android Projects\bPASS\app\build\intermediates\pre-dexed\debug\classes-c8b68f82420ad93b5480b705685b4619b295cb04.jar" />
+=======
+        <dex dex="C:\Users\John Pfisterer\Documents\GitHub\bPASS\app\build\intermediates\pre-dexed\debug\support-annotations-23.0.1-fb11f5794173157a711c2ced2c6e544ecd48a1a2.jar" />
+    </item>
+    <item
+        jar="C:\Users\John Pfisterer\Documents\GitHub\bPASS\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.0.1\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="d86429b0f0b3f3cafbeb78dda1b9d89119ccb05d">
+        <dex dex="C:\Users\John Pfisterer\Documents\GitHub\bPASS\app\build\intermediates\pre-dexed\debug\classes-e76c10c50f448eb9ed53402c5532a9af9ef010ed.jar" />
+    </item>
+    <item
+        jar="C:\Users\John Pfisterer\Documents\GitHub\bPASS\app\build\intermediates\exploded-aar\com.jjoe64\graphview\4.0.1\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="37bf8de5b4f9e7e93006db783b9b3168e32e38e9">
+        <dex dex="C:\Users\John Pfisterer\Documents\GitHub\bPASS\app\build\intermediates\pre-dexed\debug\classes-4c5acf63764e2dbc2c6f9ed2ffc866ca392f1812.jar" />
+    </item>
+    <item
+        jar="C:\Users\John Pfisterer\Documents\GitHub\bPASS\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="c31e21b53ff2f74664e498248d01453a32e32d48">
+        <dex dex="C:\Users\John Pfisterer\Documents\GitHub\bPASS\app\build\intermediates\pre-dexed\debug\classes-507133603780c214fca469c7641753787908ae9b.jar" />
+    </item>
+    <item
+        jar="C:\Users\John Pfisterer\Documents\GitHub\bPASS\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\jars\libs\internal_impl-23.0.1.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="aa92916125166649d8ad4ba3940c3dd7515596d3">
+        <dex dex="C:\Users\John Pfisterer\Documents\GitHub\bPASS\app\build\intermediates\pre-dexed\debug\internal_impl-23.0.1-1e564c3f746ad74f98e9428bc2bafcdb5807c064.jar" />
+>>>>>>> refs/remotes/origin/master
     </item>
 
 </items>

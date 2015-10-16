@@ -3,6 +3,7 @@ package bme464.wifire;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -38,11 +39,11 @@ public class SettingsActivity extends AppCompatActivity {
         }
     }
     public void name_enter(View view){
-        SharedPreferences.Editor e = getPreferences(MODE_PRIVATE).edit();
+        SharedPreferences.Editor editor = PreferenceManager.getDefaultSharedPreferences(this).edit();
         EditText Name_entry = (EditText) findViewById(R.id.name_entry);
         String message = Name_entry.getText().toString();
-        e.putString("ID", message);
-        e.commit();
+        editor.putString("ID", message);
+        editor.commit();
         Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
     }

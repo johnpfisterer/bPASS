@@ -1,6 +1,7 @@
 package bme464.wifire;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.preference.PreferenceManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -17,8 +18,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        PreferenceManager.getDefaultSharedPreferences(this);
-        name = getPreferences(MODE_PRIVATE).getString("ID","Enter Name or ID");
+        SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(this);
+        name = preferences.getString("ID", "Enter Name or ID");
         TextView textView_name = (TextView) findViewById(R.id.textView_name);
         textView_name.setText(name);
     }
