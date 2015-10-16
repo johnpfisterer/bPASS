@@ -1,6 +1,7 @@
 package bme464.wifire;
 
 import android.content.Intent;
+import android.preference.PreferenceManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -10,15 +11,15 @@ import android.widget.TextView;
 
 
 public class MainActivity extends AppCompatActivity {
-    static public String name = "Enter Name or ID";
+    //static public String name = "Enter Name or ID";
+    public String name;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Intent intent = getIntent();
-        String name = intent.getStringExtra(SettingsActivity.EXTRA_MESSAGE);
+        PreferenceManager.getDefaultSharedPreferences(this);
+        name = getPreferences(MODE_PRIVATE).getString("ID","Enter Name or ID");
         TextView textView_name = (TextView) findViewById(R.id.textView_name);
-        //textView_name.setText("@string/name_ID");
         textView_name.setText(name);
     }
 
