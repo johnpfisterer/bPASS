@@ -22,6 +22,9 @@ public class MainActivity extends AppCompatActivity {
         name = preferences.getString("ID", "Enter Name or ID");
         TextView textView_name = (TextView) findViewById(R.id.textView_name);
         textView_name.setText(name);
+        // Just checking that Accessing this data from Application worked
+        TextView textView_Alarm = (TextView) findViewById(R.id.textView_Alarm);
+        textView_Alarm.setText(Application.test);
     }
 
     @Override
