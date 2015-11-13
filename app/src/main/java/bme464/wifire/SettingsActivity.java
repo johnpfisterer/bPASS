@@ -13,10 +13,14 @@ import android.widget.EditText;
 public class SettingsActivity extends AppCompatActivity {
     public final static String EXTRA_MESSAGE = "bme464.wifire.MainActivity.MESSAGE";
     public static boolean NAME_SET = false;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_settings);
+        SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(this);
+        EditText Name_entry = (EditText) findViewById(R.id.name_entry);
+        Name_entry.setText(preferences.getString("ID", "Enter Name or ID"));
     }
 
     @Override
@@ -39,9 +43,9 @@ public class SettingsActivity extends AppCompatActivity {
         }
     }
     public void name_enter(View view){
-        SharedPreferences.Editor editor = PreferenceManager.getDefaultSharedPreferences(this).edit();
         EditText Name_entry = (EditText) findViewById(R.id.name_entry);
         String message = Name_entry.getText().toString();
+        SharedPreferences.Editor editor = PreferenceManager.getDefaultSharedPreferences(this).edit();
         editor.putString("ID", message);
         editor.commit();
         Intent intent = new Intent(this, MainActivity.class);
