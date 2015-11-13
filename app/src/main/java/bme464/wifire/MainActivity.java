@@ -2,10 +2,23 @@ package bme464.wifire;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
+// ACCEL
 import android.hardware.Sensor;
 import android.hardware.SensorEvent;
 import android.hardware.SensorManager;
 import android.hardware.SensorEventListener;
+// Timer Tasks
+import java.util.Timer;
+import java.util.TimerTask;
+import java.util.concurrent.Executors;
+import java.util.concurrent.ScheduledExecutorService;
+import java.util.concurrent.TimeUnit;
+import android.os.Handler;
+
+
+import android.os.Handler;
+
+import android.os.Message;
 import android.preference.PreferenceManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -27,6 +40,12 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
     private float gravity[] = new float[3];
     private float linear_acceleration[] = new float[3];
     private int accelcount;
+
+    //Timer variables
+    private int elasped_time = 0;
+    final Handler myHandler = new Handler();
+    TextView timerstring;
+    private float abs_accel[] = new float[3];
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,6 +69,14 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         Accelerometer, SENSOR_DELAY_NORMAL: 215-230 ms */
 
         accelcount = 0;
+
+        // Timer
+        timerstring = (TextView)findViewById(R.id.textView_temp);
+        Timer myTimer = new Timer();
+        myTimer.schedule(new TimerTask(){
+            @Override
+            public void run(){UpdateGUI();}
+        },0,1000);
     }
 
     @Override
@@ -141,9 +168,26 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
             accelcount = 0;
         }
         accelcount++;
+        for (int i=0; i<3; i++){
+            abs_accel[i] = Math.abs(linear_acceleration[i]);
+            if (abs_accel[i] > 0.5) {
+                elasped_time = 0;
+            }
+        }
     }
 
     @Override
     public void onAccuracyChanged(Sensor sensor, int accuracy) {
     }
+
+    private void UpdateGUI(){
+        elasped_time++;
+        myHandler.post(myRunnable);
+    }
+
+    final Runnable myRunnable = new Runnable(){
+        public void run(){
+            timerstring.setText(String.valueOf(elasped_time));
+        }
+    };
 }
